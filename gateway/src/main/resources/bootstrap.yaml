@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: 192.168.200.33:8848
+      config:
+        shared-configs:
+          - dataId: common.yaml

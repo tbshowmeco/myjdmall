@@ -1,2 +1,0 @@
-# myjdmall
-myjdmall

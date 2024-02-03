@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: service-product
+  cloud:
+    nacos:
+      server-addr: 192.168.200.33:8848
+      config:
+        shared-configs:  #共享配置,再nacos中
+          - dataId: common.yaml
+

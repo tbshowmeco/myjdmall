@@ -1,7 +1,7 @@
 package com.showmeco.myjdmall.product.service;
 
-import com.showmeco.myjdmall.product.entity.BaseTrademark;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.showmeco.myjdmall.product.entity.BaseTrademark;
 
 /**
 * @author 糖饼
@@ -10,4 +10,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface BaseTrademarkService extends IService<BaseTrademark> {
 
+	void removeTrademark(Long id)  ;
+
+	void myUpdate(BaseTrademark trademark);
 }

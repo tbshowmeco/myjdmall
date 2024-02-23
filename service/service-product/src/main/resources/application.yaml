@@ -7,4 +7,11 @@ spring:
     username: root
     password: 123456
     driver-class-name: org.gjt.mm.mysql.Driver
+#  cloud:
+#    nacos:
+#      server-addr: 192.168.200.33:8848
+#      config:
+#        shared-configs: #共享配置,再nacos中
+#          - dataId: uploadFile.yaml
+
 

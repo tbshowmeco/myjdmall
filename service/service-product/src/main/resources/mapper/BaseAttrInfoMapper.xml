@@ -5,14 +5,42 @@
 <mapper namespace="com.showmeco.myjdmall.product.mapper.BaseAttrInfoMapper">
 
     <resultMap id="BaseResultMap" type="com.showmeco.myjdmall.product.entity.BaseAttrInfo">
-            <id property="id" column="id" jdbcType="BIGINT"/>
-            <result property="attrName" column="attr_name" jdbcType="VARCHAR"/>
-            <result property="categoryId" column="category_id" jdbcType="BIGINT"/>
-            <result property="categoryLevel" column="category_level" jdbcType="INTEGER"/>
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="attrName" column="attr_name" jdbcType="VARCHAR"/>
+        <result property="categoryId" column="category_id" jdbcType="BIGINT"/>
+        <result property="categoryLevel" column="category_level" jdbcType="INTEGER"/>
     </resultMap>
 
     <sql id="Base_Column_List">
         id,attr_name,category_id,
         category_level
     </sql>
+
+
+    <resultMap id="baseInfoRM" type="com.showmeco.myjdmall.product.entity.BaseAttrInfo"
+               autoMapping="true">
+        <id column="id" property="id"></id>
+        <collection property="attrValueList"
+                    ofType="com.showmeco.myjdmall.product.entity.BaseAttrValue" autoMapping="true">
+
+            <id column="vid" property="id"></id>
+
+        </collection>
+
+    </resultMap>
+    <select id="getAttrInfoListById"
+            resultMap="baseInfoRM">
+        select bai.*,bav.id vid,bav.value_name,bav.attr_id from base_attr_info bai
+        left JOIN base_attr_value bav
+        ON bai.id = bav.attr_id
+        WHERE category_id =#{c1Id} and category_level = 1
+        <if test="c2Id != null and c2Id != 0 ">
+            or category_id = #{c2Id} and category_level = 2
+        </if>
+        <if test="c3Id != null and c3Id != 0 ">
+            or category_id = #{c3Id} and category_level = 3
+        </if>
+        order by bai.id ASC,category_id ASC
+
+    </select>
 </mapper>

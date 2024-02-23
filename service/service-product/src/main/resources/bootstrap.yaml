@@ -7,4 +7,5 @@ spring:
       config:
         shared-configs:  #共享配置,再nacos中
           - dataId: common.yaml
+          - dataId: uploadFile.yaml
 

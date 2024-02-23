@@ -1,7 +1,7 @@
 package com.showmeco.myjdmall.product.service;
 
-import com.showmeco.myjdmall.product.entity.SpuInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.showmeco.myjdmall.product.entity.SpuInfo;
 
 /**
 * @author 糖饼
@@ -10,4 +10,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface SpuInfoService extends IService<SpuInfo> {
 
+	void saveSpuInfo(SpuInfo spuInfo);
 }

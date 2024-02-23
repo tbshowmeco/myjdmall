@@ -1,0 +1,81 @@
+{
+  "id": null,
+  "spuId": 30,
+  "price": "2",
+  "skuName": "小米14Pro ",
+  "weight": "20",
+  "skuDesc": "小米14Pro 徕卡可变光圈镜头 光影猎人900 小米澎湃OS 骁龙8Gen3 16+1T 钛金属特别版 ultra",
+  "category3Id": 61,
+  "skuAttrValueList": [
+    {
+      "attrId": "1",
+      "valueId": "6"
+    },
+    {
+      "attrId": "2",
+      "valueId": "9"
+    },
+    {
+      "attrId": "3",
+      "valueId": "20"
+    },
+    {
+      "attrId": "4",
+      "valueId": "27"
+    },
+    {
+      "attrId": "5",
+      "valueId": "34"
+    },
+    {
+      "attrId": "11",
+      "valueId": "85"
+    },
+    {
+      "attrId": "12",
+      "valueId": "88"
+    }
+  ],
+  "skuSaleAttrValueList": [
+    {
+      "saleAttrValueId": "128",
+      "saleAttrValueName": "蓝色",
+      "baseSaleAttrId": "1",
+      "saleAttrName": "选择颜色"
+    },
+    {
+      "saleAttrValueId": "126",
+      "saleAttrValueName": "12+512",
+      "baseSaleAttrId": "2",
+      "saleAttrName": "选择版本"
+    }
+  ],
+  "skuImageList": [
+    {
+      "spuImgId": 282,
+      "imgName": "2320b5bc50437e85d6eb8c07167af108.jpg",
+      "imgUrl": "http://192.168.200.33:9000/myjdmall/2024-02-23/6183cb3a-1c7e-4dbe-92de-3416cf0d6bf8.jpg",
+      "isDefault": 1
+    },
+    {
+      "spuImgId": 283,
+      "imgName": "c3ed9439be856ab8abcdc027f85ed68f.jpg",
+      "imgUrl": "http://192.168.200.33:9000/myjdmall/2024-02-23/e485ed2f-886c-44e0-9558-6eba1d9b1b8c.jpg",
+      "isDefault": 0
+    },
+    {
+      "spuImgId": 284,
+      "imgName": "1b475774042dfa65fa7e4b6ed8a5c758.png",
+      "imgUrl": "http://192.168.200.33:9000/myjdmall/2024-02-23/0a6397d3-4eef-4528-b618-96eb2b6922be.png",
+      "isDefault": 0
+    },
+    {
+      "spuImgId": 285,
+      "imgName": "5f611d1818bcc8b62b6c6e06dc4cafde.jpg",
+      "imgUrl": "http://192.168.200.33:9000/myjdmall/2024-02-23/0f996d87-41e9-492f-92d4-be100951088f.jpg",
+      "isDefault": 0
+    }
+  ],
+  "skuDefaultImg": "http://192.168.200.33:9000/myjdmall/2024-02-23/6183cb3a-1c7e-4dbe-92de-3416cf0d6bf8.jpg",
+  "tmId": 36
+}
